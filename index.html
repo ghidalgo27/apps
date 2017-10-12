@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>Control y Monitoreo</title>
+        <link rel ="stylesheet" type="text/css" href="css/ArchivoCSS.css" />
+    </head>
+    <body>  
+	    <div class ="header">
+            
+                <span> 
+                    <font face="calibri" size=6> <b>Control Motor</b> </font>
+                </span>
+        </div>
+        
+        <img aling="left" src="img/Esquema.png">
+                
+        <!--------------------------Imagen a mostrar con= 'ON'-------------------------------------->
+         
+            <div id='Ocultar' style='display:none;'>
+                <img aling="left" src="img/Led_ON.png">
+            </div>
+            <div id='Mostrar' style='display:block;'>
+                <img aling="left" src="img/Led_Off.png">
+            </div>    
+       
+	  <!-------------------------------------------------------------------------------------------->
+        
+        
+	<form>
+        <!--Se define el boton con Nombre= 'Start'-->
+	  	 <input type="submit" value="Start"
+	        value="Mostrar" onclick="mostrar()">
+         
+        <!--Se asigna la variable al boton con valor de 1 a Motor_plc-->
+        <input type="hidden" name='"Motor_PLC"' value ="1">
+	  </form>
+	  	  
+ <!-------------------------------------------------------------------------------------------->
+        	  
+
+        	<form>
+                <button type="submit" id='BtnON'> ON
+        
+                    <input type="hidden" name='"Motor_PLC"' value ="1">
+                        
+                </button>
+            </form>
+
+        
+        	<form>
+                <button type="submit" id='BtnOff'>Off</button>
+                <input type="hidden" name='"Motor_PLC"' value ="0">
+            </form>
+
+            
+        
+        
+       	  <!--Represenacion datos de la variable MOTOR_PLC ((entrada de plc a htlm valor de motor-->
+	  
+	   <font face="calibri" size=4> Salida del Motor es ::="Motor_PLC": </font>  "Motor_PLC"
+        
+        
+       
+       <script type="text/javascript" src="js/fastclick.js"></script>  
+       <script type="text/javascript" src="js/PLC.js"></script> 
+        <script type="text/javascript" src="cordova.js"></script>
+    </body>
+
+</html>

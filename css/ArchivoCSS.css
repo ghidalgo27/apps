@@ -1,0 +1,61 @@
+/* color de fondo incial */
+body{
+	background-color: #CEE3F6;
+  
+}
+
+span{
+    margin-left: 100px;   /* margen dede la izauierda*/
+      text-transform: uppercase;
+    text-align: center;
+    text-decoration-style: solid;
+
+}
+
+/* clases q se ejecutan dede js y hacen cambair el color de fondo */
+
+/* color de botones claro oscuro */
+button{
+	background-color: #58FAAC;
+	color: #000000;
+	border: none;
+	width: 30%;  /* largo */
+	padding: 30px; /* ancho */
+	font-size: 1em; 
+	margin-top: 10px;
+	}
+
+/* letra gestos */
+
+#info{
+    color: #000000;
+    font-size: 2em;
+    margin-top: 10px;
+   /* text-transform: uppercase;*/
+    
+     }
+
+img{
+    width: 20%; /* tamanio */
+    margin-top: 10px;  /* margen arriba */
+    margin-left: 80px;   /* margen dede la izauierda*/
+}
+
+#Ocultar{
+    width: 40%; /* tamanio */
+    margin-top: 10px;  /* margen arriba */
+    margin-left: 80px;   /* margen dede la izauierda*/
+}
+
+#Mostrar{
+    width: 40%; /* tamanio */
+    margin-top: 10px;  /* margen arriba */
+    margin-left: 80px;   /* margen dede la izauierda*/
+}
+
+
+
+
+
+
+
