@@ -1,10 +1,6 @@
 <!DOCTYPE html>
-<!-- AWP_In_Variable Name='"Motor_PLC"' -->
-
-
 <html>
- 
-   <head>
+    <head>
         <meta charset="utf-8">
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
         <title>Control y Monitoreo</title>
@@ -14,7 +10,7 @@
 	    <div class ="header">
             
                 <span> 
-                    <font face="calibri" size=3> <b>Gestion de Avisos de Eventos1</b> </font>
+                    <font face="calibri" size=3> <b>Gestion de Avisos de Eventos</b> </font>
                 </span>
         </div>
         
@@ -59,6 +55,17 @@
             </form>
 
             
+			     	<form>
+               
+			   <input type="button" value="Enviar" onClick="window.location = 'http://192.168.1.30/awp/llovasGH/index.html?%22Motor_PLC%22=1';"> 
+
+			     <button type="submit" id='BtnOff'>Off</button> 
+                <input type="button" name='"Motor_PLC"' value ="99" onClick="window.location = 'http://www.google.com.ar';"> 
+			        
+					</form>
+			
+			
+			
         
         
        	  <!--Represenacion datos de la variable MOTOR_PLC ((entrada de plc a htlm valor de motor-->
